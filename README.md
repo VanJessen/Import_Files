@@ -1,17 +1,17 @@
 # Import_Files
  ▲ This repository is for storing a program that imports, standardizes and informs basic characteristics of the files. Such as, number of records, number of columns, data type of each field, number of null values ​​per column, etc.
 
-Esse algoritimo na dta de hoje ainda está em desenvolvimento. Já funciona em excelencia para os objetivos de seu desenvolvimento, porém, não necessariamente prevê erros de digitação ou processos diferentes do fluxo de desenvolvimento do mesmo, o que pode gerar alguns bugs. Caso ocorra algum erro, apenas execute novamente. Em caso de maiores dúvidas mandar e-mail para: gabrielelias.vidacomercial@gmail.com.
+Esse algoritimo na data de hoje ainda está em desenvolvimento. Já funciona em excelencia para os objetivos de seu desenvolvimento, porém, não necessariamente prevê erros de digitação ou processos diferentes do fluxo previsto hoje, o que pode gerar alguns bugs. Caso ocorra algum erro, apenas execute novamente. Em caso de maiores dúvidas mandar e-mail para: gabrielelias.vidacomercial@gmail.com.
 
-OBS: Caso, após várias execuções ou depois de um erro (bug), o importador demore ou não reexecutar, basta reiniciar o kernel e executando em seguida o importador de arquivos.
+OBS: Caso, após várias execuções ou depois de um erro (bug), o importador demore ou não reexecute, basta reiniciar o kernel e executando em seguida o importador de arquivos.
 
 O objetivo desse algoritmo é importar arquivos excel com uma ou várias planilhas(é possível escolher um ou mais(necessário instanciar novos objetos) planilhas para importar, padronizar as colunas para que seja possível analisar facilmente os dados, informar as características(atributos) da base de dados, tais como quantidade de registro, quantidade de colunas, quantidade de valores nulos por coluna e tipo de dados de cada coluna. Uma vez feito tudo isso, é gerado análise exploratória dos dados selecionados para importação.
 
-1 - Esse Importador de arquivos, precisará ser configurado um endereço de uma pasta padrão( do computador do usuário), aonde deve ser colocado todos os arquivos que se deseja importar. 
+1 - Para o correto funcionamento do Importador de arquivos, é necessário configurar um endereço de uma pasta padrão(pasta de arquivos do computador do usuário), aonde deve ser colocado todos os arquivos que se deseja importar. 
 
- 1.1 Uma vez executado, o importador de arquivos irá na pasta padrão e listará todos os arquivos disponíveis na pasta padrão (vide item 1). 
+ 1.1 Uma vez executado, o importador de arquivos loclizará a pasta padrão e listará todos os arquivos disponíveis dentro dela (vide item 1). 
  1.2 O Importador de arquivos perguntará ao usuário qual desses arquivos ele deseja importar.
- 1.3 O usuário precisará digitar( ou copir e colar) o nome do arquivo desejado na caixa de entrada de dados.
+ 1.3 O usuário precisará digitar(ou copir e colar) o nome do arquivo desejado na caixa de entrada de dados.
    
    1.3.1 - Se o o nome do arquivo for digitado incorretamente / se o arquivo não estiver na pasta padrão, o importador apresentará o seguinte erro: FileNotFoundError: [Errno 2] No such file or directory: 'IUGDUIOÇODP'.
    1.3.3 - Como a importação do arquivo é a parte fundamental da execução do programa ele vai paralisar completamente a execução, sendo necessário corrigir o problema e depois reexecutar o importador.
